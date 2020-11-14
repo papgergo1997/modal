@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header--dark {
+    background-color: rgb(50, 50, 50);
+    height: 4rem;
+    line-height: 4rem;
+    box-shadow: 0 0 9px black;
+}
+
+.header__title {
+    margin: 0;
+    padding-left: 1rem;;
+}
+
+.main--grey {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(241, 235, 235);
+    display: inline-block;
+
+}
+
+.main__blabla {
+    display: inline-block;
+}
+
+.main__blabla h4 {
+    padding-left: 2rem;
+}
+
+.main__blabla p {
+    padding-left: 2rem;
+}
+
+.main__img {
+    display: flex;
+}
+
+.main__img img {
+    width: 45%;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 9px rgb(100, 100, 100);
+}
+
+.section__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+}
+
+/*@media screen and (min-width:560px) { ?????
+    .section__modal {
+        width: 50%;
+    }
+}*/
+
+ 
+.modal {
+    background-color: #fefefe;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px 20px 33px 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    /*position: absolute;
+    left: 36%;
+    bottom: 35%;
+    
+    padding: 1rem;
+    display: inline-block;
+    width: 400px;*/   
+}
+
+.modal__title {
+    margin: 0;
+}
+
+.inmodal__buttons {
+    float: right;
+    margin: auto;
+}
+
+.inmodal__button {
+    border-radius: 3px;
+    border: transparent;
+    padding: 0.5em;
+    
+}
+
+.inmodal__button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 9px rgb(120, 120, 120);
+}
+
+.inmodal__button--blue {
+    background-color: rgb(51, 51, 245);
+  
+}
+
+.inmodal__button--grey {
+    background-color: rgb(182, 180, 180);
+   
+}
+
+footer {
+    background-color: rgb(50, 50, 50);
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.modal__button {
+    margin-left: 1rem;
+
+}
