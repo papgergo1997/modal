@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*Header*/
 .header--dark {
     background-color: rgb(50, 50, 50);
     height: 4rem;
@@ -14,7 +15,7 @@ body {
     margin: 0;
     padding-left: 1rem;;
 }
-
+/*Main*/
 .main--grey {
     height: 100vh;
     width: 100vw;
@@ -46,6 +47,7 @@ body {
     box-shadow: 0 0 9px rgb(100, 100, 100);
 }
 
+/*Modal*/
 .section__modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -58,17 +60,17 @@ body {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
 }
-
-
-
  
 .modal {
+    position: relative;
     background-color: #fefefe;
     margin: 20% auto; /* 15% from the top and centered */
     padding: 20px 20px 30px 20px;
     border: 1px solid #888;
     border-radius: 5px;
     width: 100%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 0 9px rgb(50, 50, 50);
+    
     /*position: absolute;
     left: 36%;
     bottom: 35%;
@@ -86,6 +88,23 @@ body {
 
 .modal__title {
     margin: 0;
+}
+
+.close {
+position: absolute;
+right: 10px;
+top: 5px;
+font-size: 28px;
+font-weight: bold;
+color: rgb(100, 100, 100);
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: rgb(192, 0, 0);
+    text-decoration: none;
+
 }
 
 .inmodal__buttons {
@@ -115,6 +134,46 @@ body {
    
 }
 
+.hideModal{
+    z-index:-1;
+    opacity:0;
+  animation: hide .25s;
+  
+transform: scale(0);
+}@keyframes hide {
+  from{
+      z-index:2;
+transform: scale(1);
+    opacity:1;
+  } to{
+      z-index:-1;
+transform: scale(0);
+    opacity: 0;
+  }
+}
+.showModal{
+  opacity:1;
+    z-index:2;
+  animation: show .2s;
+  
+transform: scale(1);
+}
+@keyframes show {
+  from{
+    
+transform: scale(0);
+    opacity:0;
+      z-index:-1;
+  } to{
+    
+transform: scale(1);
+    opacity: 1;
+      z-index:2;
+  }
+}
+
+
+/*Footer*/
 footer {
     background-color: rgb(50, 50, 50);
     height: 3rem;
