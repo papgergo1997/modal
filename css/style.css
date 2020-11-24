@@ -90,7 +90,7 @@ body {
     margin: 0;
 }
 
-.close {
+.close__icon {
 position: absolute;
 right: 10px;
 top: 5px;
@@ -99,8 +99,8 @@ font-weight: bold;
 color: rgb(100, 100, 100);
 }
 
-.close:hover,
-.close:focus {
+.close__icon:hover,
+.close__icon:focus {
     cursor: pointer;
     color: rgb(192, 0, 0);
     text-decoration: none;

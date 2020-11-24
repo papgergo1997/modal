@@ -1,10 +1,10 @@
 'use strict'
 
 
-let modal = document.getElementById("modal") ;
-let modalBtn = document.getElementById("openModal") ;
-let closeBtn = document.getElementById("close") ;
-let close2Btn = document.getElementById("close2");
+let modal = document.querySelector('.section__modal') ;
+let modalBtn = document.querySelector('.modal__button') ;
+let closeBtn = document.querySelector('.close') ;
+let closeBtn2 = document.querySelector('.close2') ;
 
 
 modalBtn.onclick = function() {
@@ -15,8 +15,7 @@ modalBtn.onclick = function() {
 closeBtn.onclick = function() {
     modal.style.display = "none";
 };
-
-close2Btn.onclick = function() {
+closeBtn2.onclick = function() {
     modal.style.display = "none";
 };
 
